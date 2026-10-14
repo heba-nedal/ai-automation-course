@@ -1,171 +1,224 @@
-# 🚀 U3 Build, Test & Prove Your Web App
+# 🚀 U3 Assignment — Build, Test & Prove Your Web App
 
 > **Build it. Test it. Prove it works.**
 
 ---
 
-# 🎯 المهمة
+## 🎯 المهمة
 
-في هذه المهمة، ستقومين ببناء **Web App** من اختيارك باستخدام:
+في هذه المهمة، ستقومين ببناء **Web App من اختيارك** باستخدام:
 
-- **Lovable** لبناء التطبيق
-- **Supabase** لإدارة البيانات والمستخدمين
-- **Testing** للتحقق من أن التطبيق يعمل كما هو متوقع
+- **Lovable**
+- **Supabase**
 
-الفكرة **من اختيارك**.
+ثم ستقومين باختبار التطبيق والتحقق من أنه يعمل كما هو متوقع.
 
-يمكنك بناء أي تطبيق بسيط يحل مشكلة حقيقية أو يقدم فائدة واضحة.
+الفكرة، المستخدمون، والوظائف الرئيسية كلها من اختيارك.
 
-### أمثلة:
-
-- Task Manager
-- Expense Tracker
-- Study Planner
-- Habit Tracker
-- Event Manager
-- Book Tracker
-- Job Application Tracker
-- Small Business Dashboard
-- Appointment Manager
-- Personal Organizer
-
-أو أي فكرة أخرى تختارينها.
-
-> **لا نريد تطبيقًا ضخمًا.**
->
-> اختاري فكرة صغيرة وواضحة، وابنيها بشكل جيد واختبريها.
+> **Choose your problem. Build your solution. Prove that it works.**
 
 ---
 
-# 🧠 المطلوب منك
+# 💡 1. Choose Your Idea
 
-المهمة تتكون من جزأين:
+اختاري مشكلة حقيقية أو حاجة واضحة، ثم صممي لها **Web App**.
 
-## Part 1 — Build
+يمكن أن يكون التطبيق في أي مجال يهمك، مثل:
 
-ابني الـ **Web App** باستخدام:
+- Education
+- Business
+- Productivity
+- Personal Management
+- Community
+- Healthcare
+- Events
+- Finance
+- Career
+- أو أي مجال آخر.
 
-**Lovable + Supabase**
+لا يوجد تطبيق محدد مطلوب منك.
 
-يجب أن يحتوي التطبيق على الأقل على:
+المهم أن يكون لديك:
 
-- واجهة واضحة للمستخدم
-- وظيفة أساسية مفيدة
-- بيانات محفوظة في **Supabase**
-- إمكانية إضافة / تعديل / حذف البيانات عند الحاجة
-- **Authentication** إذا كانت فكرة التطبيق تحتاج مستخدمين وحسابات
-
----
-
-# 🧪 Part 2 — Test
-
-بعد بناء التطبيق:
-
-> **لا تفترضي أنه يعمل فقط لأنه تم بناؤه.**
-
-اختبريه.
-
-حاولي اكتشاف:
-
-- هل الوظائف الأساسية تعمل؟
-- هل البيانات تُحفظ بشكل صحيح؟
-- هل يمكن للمستخدم تنفيذ الـ main flow؟
-- ماذا يحدث عند إدخال بيانات خاطئة؟
-- ماذا يحدث عندما تكون البيانات ناقصة؟
-- هل توجد حالات لا يعمل فيها التطبيق كما توقعتِ؟
+**Problem → User → Solution**
 
 ---
 
-# 🔍 Test Your App
+# 🏗️ 2. Build Your Web App
+
+استخدمي:
+
+### Lovable
+
+لبناء الـ **Web App** والـ User Interface والوظائف الأساسية.
+
+### Supabase
+
+لإدارة:
+
+- Database
+- Authentication
+- User Data
+
+---
+
+# 🔐 3. User & Data Management
+
+إذا كان تطبيقك يستخدم حسابات المستخدمين، طبقي:
+
+- Sign Up
+- Login
+- Logout
+- User-specific Data
+
+وتأكدي من أن المستخدم لا يستطيع الوصول إلى بيانات مستخدم آخر.
+
+استخدمي **Supabase Authentication** و **RLS** عندما تكون مطلوبة في تصميمك.
+
+---
+
+# 🧪 4. Test Your App
+
+بعد الانتهاء من البناء:
+
+> **Don't assume it works. Test it.**
 
 اختاري أهم الوظائف في تطبيقك واختبريها.
 
-على الأقل:
+يجب أن يتضمن Testing الخاص بك على الأقل:
 
 ### ✅ Positive Test
 
-اختبري حالة صحيحة.
+اختبري حالة استخدام صحيحة.
 
-مثال:
-
-> إضافة Task جديدة ببيانات صحيحة.
+**Scenario:**  
+...
 
 **Expected:**  
-يتم إنشاء الـ Task وحفظها.
+...
 
 **Actual:**  
-ما حدث فعليًا.
+...
+
+**Result:** PASS / FAIL
 
 ---
 
 ### ❌ Negative Test
 
-اختبري حالة غير صحيحة.
+اختبري حالة استخدام غير صحيحة.
 
-مثال:
+مثل:
 
-> محاولة إضافة Task بدون عنوان.
+- Missing required data
+- Invalid input
+- Wrong format
+- Unauthorized action
+
+**Scenario:**  
+...
 
 **Expected:**  
-يمنع التطبيق العملية أو يعرض رسالة مناسبة.
+...
 
 **Actual:**  
-ما حدث فعليًا.
+...
+
+**Result:** PASS / FAIL
 
 ---
 
 ### ⚠️ Edge Case
 
-اختبري حالة غير معتادة.
+اختبري حالة غير معتادة أو حدًّا من حدود النظام.
 
-مثال:
-
-> إدخال قيمة طويلة جدًا أو بيانات غير متوقعة.
+**Scenario:**  
+...
 
 **Expected:**  
-التطبيق يتعامل معها بشكل آمن.
+...
 
 **Actual:**  
-ما حدث فعليًا.
+...
+
+**Result:** PASS / FAIL
 
 ---
 
-# 🐛 Fix & Re-test
+# 🔐 5. Test Data & Access
 
-إذا اكتشفتِ مشكلة:
+إذا كان تطبيقك يحتوي على Users وبيانات خاصة، اختبري:
 
-**Don't just report it. Fix it.**
+> **Can one user access another user's data?**
 
-استخدمي **Lovable / Supabase** لمعالجة المشكلة.
+اختبري ذلك باستخدام حسابين مختلفين.
 
-ثم:
-
-> **Test Again**
-
-للتأكد أن المشكلة تم حلها.
+إذا كان تطبيقك لا يحتاج إلى Authentication، اختاري اختبارًا آخر مناسبًا لطبيعة النظام.
 
 ---
 
-# 📋 المطلوب تسليمه
+# 🐛 6. Find & Fix
 
-لا نريد تقريرًا طويلًا.
+أثناء Testing، حاولي اكتشاف المشاكل.
 
-سلّمي **ملفًا واحدًا فقط**:
+إذا وجدتِ Bug:
+
+1. حددي المشكلة.
+2. حاولي معرفة سببها.
+3. أصلحيها باستخدام Lovable أو Supabase.
+4. أعيدي الاختبار.
+
+> **Fix → Re-test**
+
+---
+
+# 📸 7. Testing Evidence
+
+لا تكتفي بكتابة:
+
+> PASS
+
+أضيفي **Screenshots** أو أي Evidence مناسب يوضح نتائج الاختبارات المهمة.
+
+مثل:
+
+- Successful Test
+- Validation / Error
+- Database Result
+- Authentication / Access Test
+- Bug Fix
+
+> **Evidence makes your testing credible.**
+
+---
+
+# 📦 8. Submission
+
+أنشئي ملف:
 
 `README.md`
 
-ويحتوي على:
+واستخدمي الهيكل التالي:
 
-```text
+```text id="4x9z0p"
 # Project Name
 
 ## 1. Project Idea
 
-What does the app do?
+### Problem
+...
 
-## 2. Main Feature
+### User
+...
 
-What is the main thing the user can do?
+### Solution
+...
+
+## 2. Main Features
+
+- ...
+- ...
+- ...
 
 ## 3. Tech Stack
 
@@ -174,96 +227,84 @@ What is the main thing the user can do?
 
 ## 4. Testing
 
-### Test 1
-- Scenario:
-- Expected:
-- Actual:
-- Result: PASS / FAIL
+### Test 1 — Positive Testing
 
-### Test 2
-- Scenario:
-- Expected:
-- Actual:
-- Result: PASS / FAIL
+Scenario:
+Expected:
+Actual:
+Result:
 
-### Test 3
-- Scenario:
-- Expected:
-- Actual:
-- Result: PASS / FAIL
+### Test 2 — Negative Testing
+
+Scenario:
+Expected:
+Actual:
+Result:
+
+### Test 3 — Edge Case
+
+Scenario:
+Expected:
+Actual:
+Result:
+
+### Test 4 — Data / Access Testing
+
+Scenario:
+Expected:
+Actual:
+Result:
 
 ## 5. Bugs Found
 
-What problems did you discover?
+...
 
-## 6. Improvements
+## 6. Fixes
 
-What did you fix?
+...
 
-## 7. Evidence
+## 7. Testing Evidence
 
-Add screenshots showing important test results.
+Add screenshots here.
 
-## 8. Project Link
+## 8. Links
 
 Live App:
-
 GitHub:
 ```
 
 ---
 
-# 📸 Evidence
+# ✅ Final Checklist
 
-Testing لا يعني فقط أن تقولي:
-
-> "It works."
-
-نريد **Evidence**.
-
-أضيفي Screenshots بسيطة توضح بعض الاختبارات المهمة، مثل:
-
-- Test ناجح
-- Validation أو Error
-- البيانات داخل Supabase
-- نتيجة بعد إصلاح Bug
-
-لا تحتاجين إلى Screenshot لكل خطوة.
-
-> **Show evidence for the important things you tested.**
-
----
-
-# ⭐ Minimum Requirements
-
-قبل التسليم، تأكدي أن تطبيقك:
-
-- [ ] تم بناؤه باستخدام **Lovable**
-- [ ] يستخدم **Supabase**
-- [ ] يحتوي على وظيفة أساسية واضحة
-- [ ] يخزن البيانات في Supabase
-- [ ] تم اختباره
-- [ ] تم تنفيذ Positive Test
-- [ ] تم تنفيذ Negative Test
-- [ ] تم تجربة Edge Case
-- [ ] تم إصلاح المشاكل التي اكتشفتِها قدر الإمكان
-- [ ] تم إعادة الاختبار بعد الإصلاح
-- [ ] توجد Evidence
-- [ ] يوجد رابط للتطبيق
+- [ ] اخترت فكرة التطبيق.
+- [ ] حددت المشكلة والمستخدم والحل.
+- [ ] بنيت الـ Web App باستخدام **Lovable**.
+- [ ] استخدمت **Supabase**.
+- [ ] طبقت Authentication إذا كانت مطلوبة.
+- [ ] تأكدت من حفظ البيانات بشكل صحيح.
+- [ ] نفذت Positive Test.
+- [ ] نفذت Negative Test.
+- [ ] نفذت Edge Case.
+- [ ] اختبرت Data / Access عندما يكون ذلك مناسبًا.
+- [ ] اكتشفت المشاكل.
+- [ ] أصلحت المشاكل.
+- [ ] عملت Re-test.
+- [ ] أضفت Testing Evidence.
+- [ ] أضفت رابط التطبيق.
+- [ ] أضفت رابط GitHub.
 
 ---
 
-# 🧠 السؤال الأهم
+# 🧠 The U3 Question
 
-لا تسألي نفسك فقط:
+لا تسألي فقط:
 
-> **"هل بنيت التطبيق؟"**
+> **Did I build it?**
 
 اسألي:
 
-> **"How do I know it works?"**
-
-هذه هي الفكرة الأساسية في U3.
+> **How do I know it works?**
 
 ---
 
@@ -271,18 +312,14 @@ Testing لا يعني فقط أن تقولي:
 
 في U2:
 
-> **Build the System.**
+> **BUILD THE SYSTEM**
 
 في U3:
 
-> **Prove It Works.**
+> **PROVE IT WORKS**
 
-التطبيق الذي تم بناؤه ليس بالضرورة تطبيقًا يعمل بشكل صحيح.
+الدورة:
 
-المهندسة الجيدة لا تكتفي بأن ترى النظام يعمل مرة واحدة.
+> **Build → Test → Find → Fix → Re-test → Prove**
 
-بل:
-
-**Test → Find → Fix → Re-test → Prove**
-
-> **Don't just build it. Test it, improve it, and prove it works.**
+**Don't just build it. Prove it works.**
