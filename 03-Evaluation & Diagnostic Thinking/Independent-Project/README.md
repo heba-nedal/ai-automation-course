@@ -1,4 +1,4 @@
-# 🚀 U3 Assignment — Build, Test & Prove Your Web App
+# 🚀 U3 Build, Test & Prove Your Web App
 
 > **Build it. Test it. Prove it works.**
 
